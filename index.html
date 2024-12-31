@@ -10,22 +10,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <link rel="stylesheet" href="cropsy.css">
-  <title>Organic Fields - Organic Nutrients for Farming</title>
+  <title>Cropsy Nutrients</title>
  
 </head>
 <body>
-  <header class="curved-navbar">
+  <div id="home">
+    <header class="curved-navbar">
     <div class="brand">
-      <img src="cropbrand_transparent_background.png" alt="Brand Logo" class="brand-logo">
+      <img src="cropsylogo.jpg" alt="Brand Logo" class="brand-logo">
       <span class="brand-name"></span>
     </div>
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="products.html">products</a></li>
+        <li><a href="tel:+918341997766">Contact Us</a></li>
       </ul>
       <div class="hamburger" onclick="toggleMenu()">
         <span></span>
@@ -38,11 +38,11 @@
   <!-- Below the Navbar -->
   <section class="hero">
     <div class="hero-content">
-      <h1 class="hero-heading">సేంద్రియ వ్యవసాయం చేదాం,<br> నేల శక్తి ని పెంచుదాం</h1>
+      <h1 class="hero-heading">Grow Naturally, <br> Harvest Better!</h1>
       <p class="hero-subtext">Discover the power of organic nutrients for your fields. Join the green revolution today.</p>
       <div class="hero-buttons">
-        <a href="#products" class="btn-primary">Shop Now</a>
-        <a href="#about" class="btn-secondary">Learn More</a>
+        <a href="products.html" class="btn-primary">Shop Now</a>
+        <a href="aboutus.html" class="btn-secondary">Learn More</a>
       </div>
     </div>
     <div class="wave-container">
@@ -51,9 +51,10 @@
       </svg>
     </div>
   </section>
+  </div>
+  
 
-  <section id="features" class="features">
-    
+  <section id="about us" class="features">
     <div class="features-header">
       <h2 class="features-title">Cropsy Nutrients</h2>
       <p class="features-subtext">Your trusted partner in organic farming since 2017</p>
@@ -61,8 +62,8 @@
     <div class="container">
       <div class="title">సేంద్రియ వ్యవసాయం చేదాం,<br> నేల శక్తిని పెంచుదాం</div>
       <img src="home.png" alt="Organic Farming Image">
-   </div>
-    <div class="features-container">
+    </div>
+    <div class="features-container style="top:10px;">
       <div class="feature-card">
         <div class="icon">
           <img src="organic certificate.jpg" alt="Certified Organic">
@@ -97,9 +98,9 @@
     </div>
     <div class="carousel">
       <div class="carousel-track">
-          <img src="organo1.jpg" alt="Image 1">
-          <img src="farm.jpg" alt="Image 2">
-          <img src="ai products.jpg" alt="Image 3">
+          <img src="caro1.jpg" alt="Image 1">
+          <img src="cropsy2.jpg" alt="Image 2">
+          <img src="caro3.jpg" alt="Image 3">
       </div>
     </div>
   </section>
@@ -109,61 +110,62 @@
     <h2 class="our">OUR PRODUCTS</h2>
     <div class="products-container">
       <div class="product-slider">
-        <div class="product-card">
+        <div onclick="star gold.html" class="product-card ">
           <img src="star gold.png" alt="Product 1">
           <div class="details">
-            <h3>Stargold</h3>
-            <p>Star Gold: organic, enriched, foliar-ready.</p>
+            <h3>Star Gold</h3>
+            <p>Star Gold is a premium organic fertilizer with key nutrients.</p>
           </div>
         </div>
-        <div class="product-card">
+        <div  onclick="Protecter.html" class="product-card">
           <img src="Protecter.png" alt="Product 2">
           <div class="details">
             <h3>Protecter</h3>
-            <p>**Protector ensures quality organic manure via fermentation.**</p>
+            <p>Protecter ensures quality organic manure via fermentation.</p>
           </div>
         </div>
-        <div class="product-card">
+        <div  onclick="star shakti.html" class="product-card">
           <img src="star shakti.png" alt="Product 3">
           <div class="details">
-            <h3>Star shakti</h3>
+            <h3>Star Shakti</h3>
             <p>Star Shakti is rich in humic, fulvic acids, and nutrients.</p>
           </div>
         </div>
-        <div class="product-card">
+        <div  onclick="terramax.html" class="product-card">
           <img src="terramax.png" alt="Product 4">
           <div class="details">
-            <h3>Terramax</h3>
-            <p>**Terra Max boosts growth, quality, resistance, and activity.**</p>
+            <h3>Terra Max</h3>
+            <p>Terra Max boosts growth, quality, resistance, and activity.</p>
           </div>
         </div>
-        <div class="product-card">
-          <img src="sm gold.png" alt="Product 5">
+        <div  onclick="magic-99.html" class="product-card">
+          <img src="magic-99.png" alt="Product 5">
           <div class="details">
-            <h3>SM Gold</h3>
-            <p>**S M Gold enhances growth, quality, and resilience.**</p>
+            <h3>Magic 99</h3>
+            <p>Magic 99 boosts flowering and prevents Boron deficiency.</p>
           </div>
         </div>
-        <div class="product-card">
-          <img src="Agrostar.png" alt="Product 6">
+         <div  onclick="icon+.html" class="product-card">
+          <img src="icon+.png" alt="Product 7">
           <div class="details">
-            <h3>Agrostar</h3>
-            <p>Agrostar packs 3 crore microorganisms per 100g.</p>
+            <h3>Icon+</h3>
+            <p>Icon+ boosts root and shoot growth, ideal for foliar use.</p>
           </div>
         </div>
-        <div class="product-card">
-          <img src="neemastra.png" alt="Product 7">
+        <div  onclick="micro-7.html" class="product-card">
+          <img src="micro-7.png" alt="Product 6">
           <div class="details">
-            <h3>Neemastra</h3>
-            <p>Neemastra 10000 resists sucking pests with alkaloids.</p>
+            <h3>Micro-7</h3>
+            <p>Micro-7 is a growth-boosting micronutrient fertilizer.</p>
           </div>
         </div>
       </div>
-      <button class="view-more-btn">View More</button>
+     
+      <button  onclick="products.html" class="view-more-btn">View More</button>
     </div>
     
   </div>
-  <footer class="foot">
+  <footer class="foot" id="footer">
     <div class="container">
       <!-- Top Section: Quick Links & Resources -->
       <div class="footer-top">
@@ -172,22 +174,16 @@
           <h3>Quick Links</h3>
           <ul class="footer-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about us">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#footer">Contact</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="tel:+918341997766">Contact</a></li>
+            <li><a href="https://wa.me/918341997766?text=Hello%20Cropsy%20Nutrients" target="_blank" class="nav-link p-0">WhatsApp</a></li>
+            
           </ul>
         </div>
 
         <!-- Resources -->
-        <div class="footer-column">
-          <h3>Resources</h3>
-          <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
+        
       </div>
 
       <!-- Certifications Section -->
@@ -195,24 +191,25 @@
         <h3>Certified By:</h3>
         <div class="certifications">
           <div class="certification">
-            <img class="cir" src="organic certificate.jpg" alt="ISO Certified">
-            <span>ISO Certified</span>
-          </div>
-          <div class="certification">
-            <img class="cir" src="iso certificate.png" alt="FDA Approved">
-            <span>FDA Approved</span>
-          </div>
-          <div class="certification">
-            <img class="sq" src="ugafs certificate.png" alt="Organic Certified">
+            <img class="cir" id="org" src="organic certificate.jpg" alt="organic Certified">
             <span>Organic Certified</span>
           </div>
           <div class="certification">
-            <img class="sq" src="mnslogo.jpg" alt="Eco-Friendly">
-            <span>Eco-Friendly</span>
+            <img class="cir" id="iso" src="iso certificate.png" alt="ISO Approved">
+            <span>ISO Approved</span>
+          </div>
+          <div class="certification">
+            <img class="sq" id="ugafs" src="ugafs certificate.png" alt="UGAFS Certified">
+            <span>UGAFS Certified</span>
+          </div>
+          <div class="certification">
+            <img class="sq" id="mns" src="mnslogo.jpg" alt="MNS Certified">
+            <span>MNS Certified</span>
           </div>
         </div>
       </div>
     </div>
+  </footer>
   
 
 
