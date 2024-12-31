@@ -350,71 +350,96 @@ max-width: 100px; /* Adjust as needed */
         margin-right: 50px; /* Adds gap on right side */
     }
 }
-/* Footer styles */
-.foot {
-    position: relative;
-    background: linear-gradient(to top, #4CAF50, #2A9D8F, #ffffff);
-    height: 250px; /* Fixed height for the footer */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Prevent overflowing elements */
-    padding: 0 20px;
+/* Footer Styles */
+#footer {
+  position: relative;
+  background: linear-gradient(to top, #4CAF50, #2A9D8F, #ffffff);
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;  
 }
 
-/* Styling for certificate images */
+/* Footer Container */
+#footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Quick Links Section */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between links */
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+}
+
+/* Certifications Section */
+.foot-content {
+    margin-top: 20px;
+}
+
+.certificates-heading {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
 .certificates {
     display: flex;
-    justify-content: space-between; /* Equal spacing between images */
-    align-items: center;
-    flex-wrap: nowrap; /* Ensure all images stay on one row */
-    width: 100%;
-    max-width: 1200px; /* Restrict the content width for proper alignment */
-    margin: 0 auto; /* Center the certificates section */
-    padding: 10px 0;
-    box-sizing: border-box;
-    gap:5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between certificate images */
 }
 
 .certificates img {
-    flex-shrink: 0; /* Prevent images from shrinking */
-    width: 20%; /* Ensure 4 images fit in one row */
-    max-width: 150px; /* Limit the maximum width for images */
-    height: auto; /* Maintain the aspect ratio */
-    margin: 0 10px; /* Spacing between certificates */
-    object-fit: contain; /* Fit image within container without distortion */
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
-/* ISO-specific styles */
-.iso {
+/* Specific Styles for ISO and Organic Certificates */
+.certificates img.organic, 
+.certificates img.iso {
     border-radius: 50%;
 }
 
-/* Organic-specific styles */
-.organic {
-    border-radius: 50%;
+.certificates img:hover {
+    transform: scale(1.1);
 }
 
-/* Responsive adjustments for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .certificates img {
-        width: 20%; /* Slightly smaller images */
-        max-width: 100px;
-        margin: 0 5px;
-        gap:5px;
+    /* Maintain layout in small screens */
+    .footer-links {
+        gap: 10px;
     }
-    .certificates-heading{
-        align-text:center;
-}
-        
 
-@media (max-width: 576px) {
     .certificates img {
-        width: 15%; /* Further reduce size for very small screens */
-        max-width: 80px;
+        width: 60px;
+        height: 60px;
     }
 }
-}
+
 </style>
 </head>
 
@@ -426,10 +451,10 @@ max-width: 100px; /* Adjust as needed */
         </div>
         <nav>
           <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+                                <li><a href="tel:+918341997766">Contact Us</a></li>
       </ul>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
@@ -461,17 +486,35 @@ max-width: 100px; /* Adjust as needed */
               
         </div>
     </main>
-    <footer class="foot">
-      <div class="foot-content">
-          <h4 class="certificates-heading">Our Certificatons</h4>
-          <div class="certificates">
-              <img src="organic certificate.jpg" alt="Certification 1" class="organic">
-              <img src="iso certificate.png" alt="Certification 2" class="iso">
-              <img src="mnslogo.jpg" alt="Certification 3" >
-              <img src="ugafs certificate.png" alt="Certification 4" >
+    <footer class="foot" id="footer">
+      <div class="container">
+          <!-- Quick Links -->
+          <div class="footer-top">
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul class="footer-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="tel:+918341997766">Contact</a></li>
+                  <li><a href="https://wa.me/918341997766?text=Hello%20Cropsy%20Nutrients" target="_blank">WhatsApp</a></li>
+              </ul>
+          </div>
+  
+          <!-- Certifications -->
+          <div class="foot-content">
+              <h4 class="certificates-heading">Our Certifications</h4>
+              <div class="certificates">
+                  <img src="organic certificate.jpg" alt="Certification 1" class="organic">
+                  <img src="iso certificate.png" alt="Certification 2" class="iso">
+                  <img src="mnslogo.jpg" alt="Certification 3">
+                  <img src="ugafs certificate.png" alt="Certification 4">
+              </div>
           </div>
       </div>
   </footer>
+  
+  
   
     <script>
       function toggleMenu() {
