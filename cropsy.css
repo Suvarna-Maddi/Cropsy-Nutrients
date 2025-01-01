@@ -780,5 +780,13 @@ body {
     width: 50px;
     height: 50px;
   }
+   carousel img {
+    object-fit: cover; /* Maintain aspect ratio */
+
+  }
+  .carousel{
+    top: 20px;
+
+  }
   
 }
